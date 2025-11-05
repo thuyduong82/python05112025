@@ -1,0 +1,109 @@
+{
+	"identifier": "Level_0",
+	"uniqueIdentifer": "8855fac0-1030-11f0-87b6-57e4668a912c",
+	"x": 0,
+	"y": 0,
+	"width": 800,
+	"height": 600,
+	"bgColor": "#696A79",
+	"neighbourLevels": [],
+	"customFields" : {},
+	"layers": [
+		"House.png",
+		"Grass.png"
+	],
+	"entities": {
+		"Egg": [
+			{
+				"id": "Egg",
+				"iid": "e8dc4060-3740-11f0-83ff-e9a7ebcab22c",
+				"layer": "Egg",
+				"x": 80,
+				"y": 64,
+				"width": 16,
+				"height": 16,
+				"color": 14120515,
+				"customFields" : {}
+			},
+			{
+				"id": "Egg",
+				"iid": "e98c5680-3740-11f0-83ff-59380e44a76c",
+				"layer": "Egg",
+				"x": 688,
+				"y": 64,
+				"width": 16,
+				"height": 16,
+				"color": 14120515,
+				"customFields" : {}
+			},
+			{
+				"id": "Egg",
+				"iid": "ea339300-3740-11f0-83ff-7929e3f84688",
+				"layer": "Egg",
+				"x": 64,
+				"y": 528,
+				"width": 16,
+				"height": 16,
+				"color": 14120515,
+				"customFields" : {}
+			},
+			{
+				"id": "Egg",
+				"iid": "eae30ce0-3740-11f0-83ff-89438a4cd86d",
+				"layer": "Egg",
+				"x": 688,
+				"y": 544,
+				"width": 16,
+				"height": 16,
+				"color": 14120515,
+				"customFields" : {}
+			}
+		],
+		"Furniture": [
+			{
+				"id": "Furniture",
+				"iid": "2495fdf0-1030-11f0-87b6-bb9346fc5511",
+				"layer": "Furniture",
+				"x": 160,
+				"y": 160,
+				"width": 16,
+				"height": 16,
+				"color": 12470831,
+				"customFields" : {}
+			},
+			{
+				"id": "Furniture",
+				"iid": "256e0e70-1030-11f0-87b6-e95ffe12776c",
+				"layer": "Furniture",
+				"x": 544,
+				"y": 160,
+				"width": 16,
+				"height": 16,
+				"color": 12470831,
+				"customFields" : {}
+			},
+			{
+				"id": "Furniture",
+				"iid": "27079a30-1030-11f0-87b6-d9a464a4c898",
+				"layer": "Furniture",
+				"x": 160,
+				"y": 400,
+				"width": 16,
+				"height": 16,
+				"color": 12470831,
+				"customFields" : {}
+			},
+			{
+				"id": "Furniture",
+				"iid": "28ed4a20-1030-11f0-87b6-a553fb3b61d6",
+				"layer": "Furniture",
+				"x": 544,
+				"y": 416,
+				"width": 16,
+				"height": 16,
+				"color": 12470831,
+				"customFields" : {}
+			}
+		]
+	}
+}

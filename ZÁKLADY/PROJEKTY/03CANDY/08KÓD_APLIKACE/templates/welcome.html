@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vítejte</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #E0EAFC, #CFDEF3);
+
+    }
+    .logout{
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      background: #666666;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .logout:hover{
+      background: #777777;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Srdečně Vás vítáme, {{ username }}!</h1>
+    <p>Jsme moc rádi, že jste to Vy, a ne někdo jiný!</p>
+    <a class="logout" href="/">Odhlásit se</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super stránka</title>
+    <style>
+
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #E0EAFC, #CFDEF3);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .wrapper{
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        width: 320px;
+      }
+
+      input{
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .recenze{
+        margin-top: 69px;
+        margin-bottom: 5px;
+      }
+
+      h6{
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+
+      button{
+        background: #666666;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      button:hover{
+        background: #777777;
+      }
+
+      #output {
+        margin-top: 10px;
+        padding: 10px;
+        background: #f1f1f1;
+        min-height: 30px;
+      }
+
+      .error{
+        color: red;
+        font-size: 14px;
+      }
+
+    </style>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <!-- <h1>Super stránka</h1> -->
+    <h2>Bezpečné přihlášení</h2>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Jméno" required> <br>
+        <input type="password" name="password" placeholder="Heslo" required> <br>
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+
+        <button type="submit">Přihlásit se</button>
+    </form>
+
+    <h2 class="recenze">Recenze této stránky</h2>
+    <h6>*Prosím, nepište nic zákeřného</h6>
+    <input type="text" id="input" placeholder="Napište recenzi">
+    <button id="button" onclick="zobraz()">Poslat</button>
+    <p id="output"></p>
+  </div>
+    
+  
+    <script>
+      let input = document.getElementById("input");
+      let output = document.getElementById("output");
+  
+      function zobraz(){
+        output.innerHTML += input.value + "<br>";
+        input.value = "";
+      }
+    </script>
+</body>
+</html>

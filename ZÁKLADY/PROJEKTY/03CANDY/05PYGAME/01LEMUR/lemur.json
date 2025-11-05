@@ -1,0 +1,11 @@
+{
+  "name": "Mortimer The III.",
+  "color": "purpleblack",
+  "health": 100,
+  "hunger": 80,
+  "thirst": 0,
+  "cleanliness": -50,
+  "energy": -60,
+  "happiness": true,
+  "alive": true
+}
