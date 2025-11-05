@@ -30,7 +30,7 @@ spawn_time = time.time()
 clock = pygame.time.Clock()
 game_over = False
 
-# ---------------- Funkce pro ukládání odměny ----------------
+#unkce pro ukládání odměny
 def save_reward(score):
     reward_file = "reward.json"
     data = {"reaction": score}  # identifikátor hry
@@ -40,7 +40,7 @@ def save_reward(score):
     except Exception as e:
         print("Chyba při ukládání odměny:", e)
 
-# ---------------- Hlavní smyčka ----------------
+
 while True:
     for e in pygame.event.get():
         if e.type == pygame.QUIT:
@@ -72,7 +72,7 @@ while True:
                 circle_y = random.randint(circle_radius, HEIGHT - circle_radius)
                 spawn_time = time.time()
 
-    # vykreslení
+ 
     screen.fill(WHITE)
 
     if not game_over:
